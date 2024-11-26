@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - Proyecto Cocos</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4fbd5e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #map {
+            height: 80vh; /* Altura del mapa */
+            width: 100%; /* Ancho completo */
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ubicación del Proyecto Cocos</h1>
+            
+<header>
+    
+   
+
+    <h1>Proyecto Cocos</h1>
+    <nav>
+        <a href="index.html">Productos</a>
+        
+    </nav>
+</header>
+    </header>
+    <a href="https://www.bing.com/maps?q=Jiquilisco&satid=id.sid%3A61368419-6aed-0044-b011-9ffbcb3ba42c&FORM=KC2MAP&cp=13.326633%7E-88.570211&lvl=16.0" target="_blank">
+        <img src="vaai.JPG" alt="Ver ubicación en Bing Maps" />
+
+    <div id="map"></div>
+
+    <footer>
+        &copy; 2024 Proyecto Cocos - Todos los derechos reservados.
+    </footer>
+
+    <script>
+        function initMap() {
+            // Coordenadas de tu ubicación (modifícalas con las coordenadas exactas de tu proyecto)
+            const location = { lat: 13.6929, lng: -89.2182 }; // San Salvador, El Salvador
+            
+            // Crear el mapa
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15, // Nivel de zoom
+                center: location, // Centrar el mapa en la ubicación
+            });
+
+            // Agregar un marcador en la ubicación
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Proyecto Cocos", // Título del marcador
+            });
+        }
+    </script>
+
+
+</a>
+</body>
+</html>
